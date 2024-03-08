@@ -5,17 +5,20 @@
   },
   "extends": [
     "airbnb",
+    "airbnb-typescript",
     "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
     "plugin:@next/next/recommended",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "project": "./tsconfig.json",
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react"],
+  "plugins": ["import", "@typescript-eslint", "react"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-uses-react": "off",
@@ -25,5 +28,15 @@
         "extensions": [".tsx"]
       }
     ]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+      }
+    }
   }
 }
