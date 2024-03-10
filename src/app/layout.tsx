@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Head from 'next/head';
 import { ubuntu } from '@/styles/fonts';
 import NavBar from '@/components/NavBar';
 import './globals.css';
@@ -15,6 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+      </Head>
       <body className={`${ubuntu.className} flex flex-row`}>
         <NavBar />
         <main className="flex-grow">{children}</main>
