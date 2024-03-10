@@ -29,7 +29,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="max-w-xs bg-[#1B1B1B]">
+    <nav className="max-w-xs bg-navBlack">
       <div className="p-5 min-h-[52px]">
         <Logo />
       </div>

@@ -2,7 +2,7 @@
 
 export default function Logo() {
   return (
-    <span className="text-s font-bold text-transparent bg-clip-text bg-gradient-to-l from-[#FFD25F] to-[#FF5C01]">
+    <span className="text-s font-bold text-transparent bg-clip-text bg-gradient-to-l from-logoOrange to-logoYellow">
       LOGO
     </span>
   );
