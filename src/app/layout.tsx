@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ubuntu } from '@/styles/fonts';
+import NavBar from '@/components/NavBar';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ubuntu.className}>{children}</body>
+      <body className={`${ubuntu.className} flex flex-row`}>
+        <NavBar />
+        <main className="flex-grow">{children}</main>
+      </body>
     </html>
   );
 }
