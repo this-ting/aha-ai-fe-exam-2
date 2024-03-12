@@ -12,9 +12,11 @@ const config: Config = {
       black: '#121212',
       navBlack: '#1B1B1B',
       white: '#fff',
+      greyWhite: '#FFFFFF80',
       inactiveGrey: '#6A6A6A',
       logoOrange: '#FF5C01',
       logoYellow: '#FFD25F',
+      tutorOrange: '#FF9B33',
     },
     extend: {
       backgroundImage: {
