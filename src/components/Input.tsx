@@ -1,7 +1,7 @@
 import { Input as BaseInput, InputProps } from '@mui/base/Input';
 
 const INPUT_STYLE =
-  'border-2 border-greyWhite focus:outline-none focus:border-tutorOrange bg-transparent rounded-md p-4 text-sm';
+  'border-2 border-white50 focus:outline-none focus:border-tutorOrange bg-transparent rounded-md p-4 text-sm';
 
 export default function Input({ onChange, placeholder }: InputProps) {
   return (
